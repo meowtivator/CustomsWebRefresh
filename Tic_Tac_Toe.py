@@ -15,14 +15,14 @@ def print_board(board):
 def get_player_move(board):
     while True:
         try:
-            move = int(input("Enter your move (1-9): ")) - 1
+            move = int(input("놓을 수를 정하세요 (1-9): ")) - 1
             row, col = divmod(move, 3)
             if 0 <= move < 9 and board[row][col] == " ":
                 return row, col
             else:
-                print("Invalid move. Try again!")
+                print("놓을 수 없는 수입니다. 다시 두세요!")
         except ValueError:
-            print("Please enter a number between 1 and 9.")
+            print("1에서 9까지의 숫자를 입력하세요.")
 
 # 컴퓨터 AI
 def get_computer_move(board):
@@ -60,18 +60,18 @@ def play_game():
         if current_player == "X":
             row, col = get_player_move(board)
         else:
-            print("Computer is making a move...")
+            print("컴퓨터가 수를 두는 중입니다...")
             row, col = get_computer_move(board)
         
         board[row][col] = current_player
 
         if check_winner(board, current_player):
             print_board(board)
-            print(f"{current_player} wins!")
+            print(f"{current_player} 이겼습니다!")
             break
         elif is_draw(board):
             print_board(board)
-            print("It's a draw!")
+            print("무승부입니다!")
             break
         
         # 플레이어 전환
