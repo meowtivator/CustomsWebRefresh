@@ -81,7 +81,7 @@ def play_game():
 if __name__ == "__main__":
     while True:
         play_game()
-        replay = input("Do you want to play again? (y/n): ").lower()
+        replay = input("게임을 더 플레이하시겠습니까? (y/n): ").lower()
         if replay != "y":
-            print("Thanks for playing!")
+            print("플레이 해주셔서 감사합니다!")
             break
