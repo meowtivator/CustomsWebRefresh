@@ -1,12 +1,30 @@
-# macOS System File
+# Logs & OS File
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 .DS_Store
-
-# Windows System File
 Thumbs.db
 Desktop.ini
 
-# VS Code Setting File
-.vscode/
+node_modules
+dist
+dist-ssr
+*.local
+src/**/input.css
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # Temporary File
 *.tmp
@@ -14,3 +32,5 @@ Desktop.ini
 
 # Enviroment Value File (more update)
 .env
+.env.local
+.env.*.local
