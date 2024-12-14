@@ -20,5 +20,6 @@
     "@vitejs/plugin-vue": "^5.2.1",
     "gh-pages": "^6.2.0",
     "vite": "^6.0.1"
-  }
+  },
+  "homepage": "https://meowtivator.github.io/CustomsWebRefresh/"
 }
