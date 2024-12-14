@@ -7,12 +7,12 @@ import BidHistory from "../views/BidHistory.vue";
 import RefundInfo from "../views/RefundInfo.vue";
 
 const routes = [
-  { path: "/", name: "MainPage", component: MainPage },
-  { path: "/detail/:id", name: "DetailPage", component: DetailPage },
-  { path: "/auction-list/:id?", name: "AuctionList", component: AuctionList },
-  { path: "/auction-guide/:id?", name: "AuctionGuide", component: AuctionGuide },
-  { path: "/bid-history/:id?", name: "BidHistory", component: BidHistory },
-  { path: "/refund-info/:id?", name: "RefundInfo", component: RefundInfo },
+  { path: "/CustomsWebRefresh/", name: "MainPage", component: MainPage },
+  { path: "/CustomsWebRefresh/detail/:id", name: "DetailPage", component: DetailPage },
+  { path: "/CustomsWebRefresh/auction-list/:id?", name: "AuctionList", component: AuctionList },
+  { path: "/CustomsWebRefresh/auction-guide/:id?", name: "AuctionGuide", component: AuctionGuide },
+  { path: "/CustomsWebRefresh/bid-history/:id?", name: "BidHistory", component: BidHistory },
+  { path: "/CustomsWebRefresh/refund-info/:id?", name: "RefundInfo", component: RefundInfo },
 ];
 
 const router = createRouter({

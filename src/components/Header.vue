@@ -11,11 +11,11 @@
     </h1>
     <nav>
       <ul class="flex space-x-4">
-        <li><router-link to="/">홈</router-link></li>
-        <li><router-link to="/auction-list">공매 물품 조회</router-link></li>
-        <li><router-link to="/auction-guide">체화 공매 안내</router-link></li>
-        <li><router-link to="/bid-history">입찰 내역 조회</router-link></li>
-        <li><router-link to="/refund-info">환불 계좌 정보</router-link></li>
+        <li><router-link to="/CustomsWebRefresh/">홈</router-link></li>
+        <li><router-link to="/CustomsWebRefresh/auction-list">공매 물품 조회</router-link></li>
+        <li><router-link to="/CustomsWebRefresh/auction-guide">체화 공매 안내</router-link></li>
+        <li><router-link to="/CustomsWebRefresh/bid-history">입찰 내역 조회</router-link></li>
+        <li><router-link to="/CustomsWebRefresh/refund-info">환불 계좌 정보</router-link></li>
       </ul>
     </nav>
   </header>
